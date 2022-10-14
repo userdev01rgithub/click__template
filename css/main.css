@@ -1,0 +1,409 @@
+/* -------- [import for Fonts ] -------- */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* -------- [End import] -------- */
+
+
+
+/* -------- [Styling global style] -------- */
+*{
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;*/
+    transition: 0.125;
+}
+:root{
+    /* color */
+    --black: #000000;
+    --white: #ffffff;
+    --hover: #DBDBDB;
+    --greay: #989898;
+    /*  */
+
+    /* size */
+    --width: 100vw;
+    /*  */
+}
+body{
+    width: var(--width);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.conteiner{
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+/* -------- [End Styling global style] -------- */
+
+
+/* -------- [Styling Header] -------- */
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.header__menu__ul{
+    display: flex;
+}
+.header__menu a{
+    color: var(--black);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+}
+.header__menu__ul__li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*  */
+
+.about__free__card{
+    display: flex;
+    bottom: 0 0 10px 0;
+}
+.about__free__card p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--greay);
+    margin-left: 12px;
+}
+span{
+    background: linear-gradient(90deg, #EC6E36 0%, #FAAD1C 65.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.about__text {
+    margin-top: 31px;
+    margin-bottom: 40px;
+}
+.about__text p{
+    width: 412px;
+    height: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.about__block__1 h2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 46px;
+line-height: 64px;
+}
+.about__header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+button{
+    width: 200px;
+    height: 52px;
+    background: #242424;
+    border-radius: 8px;
+    color: var(--white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.header__action__line{
+    display: flex;
+}
+.header__play_video{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.header__payment__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #989898;
+}
+.header__payment__list{
+    display: flex;
+}
+.header__payment__list > li{
+    margin-right: 22px;
+}
+.header__play_video > p > a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    /* identical to box height */
+
+    color: #242424;
+}
+.header__payment__text{
+    margin-top: 41px;
+    margin-bottom: 21px;
+}
+
+
+
+
+.section__work{
+    margin-top: 100px;
+}
+.section__work__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section__work__list{
+    display: flex;
+    padding: 0 50px 0 50px;
+    justify-content: space-around;
+}
+
+.list__item{
+    height: 24px;
+    width: 24px;
+    background: #EC6E36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 10;
+}
+.list__item > p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+.work__list > img {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.work__atom > h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 13px;
+}
+.work__atom{
+    width: 378px;
+}
+.work__atom>p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+.work__chealts{
+    display: flex;
+    justify-content: center;
+}
+
+
+.section__money{
+    margin-top: 45px;
+}
+.section__money > h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+.money__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.money__list__block{
+    background: #FFF7F3;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-block-start: 40px;
+    width: 530px;
+}
+.money__list__block>h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #242424;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.money__list__block>p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #242424;
+    width: 500px;
+}
+.money__list__block>p>a {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #E95511;
+}
+.money__link{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.section__price{
+    margin-top: 50px;
+}
+.section__price__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    text-align: center;
+}
+.money__block{
+    background: #FFF7F3;
+    max-width: 361px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 30px 35px 20px 35px;
+}
+.section__price__catalog{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.money__first{
+    max-width: 361px;
+    background: #EC6E36;
+    border-radius: 30px;
+}
+.money__first > h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.money__first > p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section__app{
+    margin-top: 40px;
+    background: #FFF7F3;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__app__header{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #242424;
+}
+.section__app__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+.money__first__text > h4{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 30px;
+color: #242424;
+}
+.money__first__text > h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #EC6E36;
+}
+.money__first__text > h2 > span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    background: linear-gradient(90deg, #EC6E36 0%, #FAAD1C 65.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.money__block__check{
+    background: #FFEDE4;
+    border-radius: 20px;
+}
+li::before{
+    background-image: url("image/section/price/li.png");
+}
+.money__list__block__right{
+    background: #FFF6D8;
+}
