@@ -471,4 +471,117 @@ button{
 }
 .section__people{
     margin-top: 30px;
+    display: flex;
 }
+.section__people__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+.section__people__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.section__people__rBlock {  
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1.6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "one__line one__line one__line"
+      "line__two__left line__two__left line__two__right"
+      "line__tree line__tree line__tree";
+  }
+  
+  .one__line {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "line__one line__one line__one"
+      "line__one line__one line__one"
+      "line__one line__one line__one";
+    grid-area: one__line;
+  }
+  
+  .line__one { 
+    grid-area: line__one;
+    display: flex;
+    max-width: 300px;
+    max-height: 142px;
+    background: #FFF7F3;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-left: 15%;
+    padding-bottom: 12px;
+
+ }
+ .line__cardon__header{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+ } 
+ .line__cardon__author{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #EC6E36;
+    margin-top: 5px;
+ }
+ .line__cardon__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 59px;
+    margin-top: 4px;
+ }
+ .line__cardon__text > p {
+    margin-top: 8px;
+ }
+  .line__two__left { 
+    grid-area: line__two__left; 
+    display: flex;
+    max-width: 300px;
+    max-height: 142px;
+    background: #FFF7F3;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+.line__two__right{
+    display: flex;
+    max-width: 300px;
+    max-height: 142px;
+    background: #FFF7F3;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+  
+  .line__two__right { grid-area: line__two__right; }
+  
+  .line__tree { grid-area: line__tree; }
+  
