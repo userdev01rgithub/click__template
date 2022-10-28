@@ -470,7 +470,7 @@ button{
     border-radius: 10px;
 }
 .section__people{
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
 }
 .section__people__title{
@@ -480,6 +480,7 @@ button{
     font-size: 36px;
     line-height: 54px;
     color: #000000;
+    max-width: 350px;
 }
 .section__people__text{
     font-family: 'Poppins';
@@ -488,100 +489,215 @@ button{
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    margin-top: 14px;
+    max-width: 676px;
 }
-
-.section__people__rBlock {  
-    display: grid;
-    grid-template-columns: 1fr 0.4fr 1.6fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "one__line one__line one__line"
-      "line__two__left line__two__left line__two__right"
-      "line__tree line__tree line__tree";
-  }
-  
-  .one__line {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "line__one line__one line__one"
-      "line__one line__one line__one"
-      "line__one line__one line__one";
-    grid-area: one__line;
-  }
-  
-  .line__one { 
-    grid-area: line__one;
+.section__people__lBlock{
+    max-width: 50%;
+}
+.section__people__lBlock > ul {
+    margin-top: 15px;
+}
+.section__people__lBlock > button{
+    margin-top: 20px;
+}
+.section__people__rBlock{
+    width: 68%;
+}
+.one__line{
+    display: flex;
+    justify-content: center;
+}
+.line__one{
     display: flex;
     max-width: 300px;
-    max-height: 142px;
+    max-height: 130px;
     background: #FFF7F3;
     border-radius: 20px;
-    padding-left: 15px;
-    padding-top: 15px;
-    margin-left: 15%;
-    padding-bottom: 12px;
-
- }
- .line__cardon__header{
+    padding: 15px 73px 15px 15px;
+}
+.line__one__right{
+    display: flex;
+    max-width: 300px;
+    max-height: 130px;
+    background: #FFF7F3;
+    border-radius: 20px;
+    padding: 15px 73px 15px 15px;
+    margin-left: 25px;
+}
+.line__cardon__text{
+    margin-left: 10px;
+}
+.line__cardon__header{
+    
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 15px;
     color: #000000;
- } 
- .line__cardon__author{
+}
+.line__cardon__author{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 15px;
     color: #EC6E36;
-    margin-top: 5px;
- }
- .line__cardon__text{
+    margin-top: 6px;
+}
+.line__cardon__p{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     color: #000000;
-    padding-left: 10px;
-    padding-right: 59px;
-    margin-top: 4px;
- }
- .line__cardon__text > p {
-    margin-top: 8px;
- }
-  .line__two__left { 
-    grid-area: line__two__left; 
-    display: flex;
-    max-width: 300px;
-    max-height: 142px;
-    background: #FFF7F3;
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 12px;
+    margin-top: 6px;
+    max-width: 174px; 
 }
-.line__two__right{
+.two__line{
     display: flex;
-    max-width: 300px;
-    max-height: 142px;
-    background: #FFF7F3;
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 12px;
+    justify-content: center;
+    margin-top: 25px;
 }
-  
-  .line__two__right { grid-area: line__two__right; }
-  
-  .line__tree { grid-area: line__tree; }
-  
+.line__tree{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+footer{
+    background: #242424;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 55px;
+}
+.footer__left__navigate > h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+
+    /* identical to box height, or 114% */
+
+    color: #FFFFFF;
+}
+.footer__left__navigate > ul {
+    display: flex;
+}
+.footer__left__navigate > ul > li > a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+.footer__left__navigate > ul > li{
+    margin-right: 20px;
+} 
+.footer__left__paginator  {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 80px;
+}
+.footer__left__paginator > h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+.footer__socail__icons{
+    display: flex;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__right{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    width: 440px;
+    height: 440px;
+    margin-top: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+.footer__right__button {
+    width: 100%;
+}
+
+.footer__right__input{
+    background: #FFFCFA;
+    border: 1px solid #F8ECE6;
+    border-radius: 10px;
+    height: 48px;  
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #9A9897;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 400px;
+}
+.footer__socail__element{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.footer__right__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    color: #242424;
+    margin-bottom: 19px;
+}
+.footer__input__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #242424;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer__left{
+    padding-left: 80px;
+    padding-top: 70px;
+    position: relative;
+    padding-bottom: 30px;
+    max-height: 440px;
+}
+.footer__left__navigate > ul {
+    margin-top: 40px;
+}
