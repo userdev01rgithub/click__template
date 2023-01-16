@@ -662,3 +662,37 @@ footer{
     margin-top: 40px;
 }
 /* -------- [end Styling Footer] -------- */
+
+
+
+@media (max-height: 877px) {
+  .about__elem2{
+	  display:none;
+  }
+  .about__header {
+	  display: flex;
+	  justify-content: center;
+  }
+  
+  .money__list {
+	  
+	overflow-x: scroll;
+  
+  }
+
+	.money__right{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.two__line{
+		display: block;
+		
+	}
+	.people__rblock{
+		display: none;
+	}
+	.section__people{
+		justify-content: center;
+	}
+}
